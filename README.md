@@ -1,6 +1,6 @@
 ## Pretty Word Diffs
 
-GitHub has a nice way of showing word-based diffs on Markdown files. I needed a way to be able to create similar pretty diffs as standalone documents. This is what I came up with:
+GitHub has a nice way of showing word-based diffs on Markdown files. I needed a way to be able to create similar pretty diffs as standalone documents. This is what I came up with.  
 
 ### Requirements:
 
@@ -15,7 +15,7 @@ cd pwdiff
 ```
 Then have a look at out.html and you should see something like:
 
-![Pretty diffs](examples/output.png)
+![Pretty diffs](https://github.com/jduckles/pwdiff/blob/master/example/output.png?raw=true)
 
 ## Gotchas 
 
