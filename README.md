@@ -15,7 +15,7 @@ cd pwdiff
 ```
 Then have a look at out.html and you should see something like:
 
-![Pretty diffs](examples/output.png)
+![Pretty diffs](https://github.com/jduckles/pwdiff/blob/master/example/output.png?raw=true)
 
 ## Gotchas 
 
