@@ -13,7 +13,7 @@ context_lines=65535 # Set to be very large to include whole document as output.
 git diff -U${context_lines}  --no-index --word-diff -- ${oldfile} ${newfile} |\
    tail +6  |\
    sed 's/\[-/~~/g;s/-]/~~/g;' |\
-   sed 's/{\+/**/g;s/+}/**/g' |\
+   sed 's/{\+/__/g;s/+}/__/g' |\
    pandoc -s -H changes.css -f markdown -t html 
 
 
