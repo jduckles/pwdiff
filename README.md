@@ -21,10 +21,10 @@ Then have a look at out.html and you should see something like:
 ## How does this work?
 
 1. We use git's [`--word-diff`](https://git-scm.com/docs/git-diff#Documentation/git-diff.txt---word-diffltmodegt) option. 
-2. Which outputs `{+ +}` for additions and `[- -]` for removals
-3. Using sed we replace addition and removal tags with markdown tags for underline and strikethrough respectively
-4. We treat output as Markdown and pipe to pandoc to convert to HTML
-5. Applying the `styles.css` to that HTML we style underline to green and strikethrough to red to show additions and removals in a colorblind accessible way
+2. Which annotates/tags the text with `{+ +}` for additions and `[- -]` for removals
+3. Using sed we replace addition and removal tags `{+ +}` and `[- -]` with markdown tags `__` and `~~` for underline and strikethrough.
+4. We treat output as Markdown and pipe to pandoc to convert to HTML. 
+5. Applying the `styles.css` to that HTML we style underline to green and strikethrough to red to show additions and removals in a colorsighted and colorblind accessible way.
 
 ## Gotchas 
 
